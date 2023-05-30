@@ -3,7 +3,6 @@ package it.epicode.be.godfather.model;
 import java.time.LocalTime;
 import java.util.HashMap;
 import java.util.Map;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import lombok.Getter;
@@ -44,15 +43,16 @@ public class Ordine{
 	@Override
 	public String toString() {
 	    return 
-	            "Numero: " + tavolo.getNumeroTavolo() +
-	            ", Massimo coperti del tavolo: " + tavolo.getMaxNumeroCoperti() +
-	            ", stato del tavolo: " + tavolo.getStato() +
-	            ", numero dell'ordine: " + numOrdine +
-	            ", stato dell'ordine: " + statoOrdine +
-	            ", numero coperti del tavolo" + numeroCoperti +
-	            ", ora acquisizione ordine: " + oraAcquisizione +
-	            ", conto: " + importoTotale +
-	            ", comanda: " + ordine;
+	            "Numero: " + tavolo.getNumeroTavolo() + ", \n" + 
+	            "Massimo coperti del tavolo: " + tavolo.getMaxNumeroCoperti() + ", \n" +
+	            "stato del tavolo: " + tavolo.getStato() + ", \n" +
+	            "numero dell'ordine: " + numOrdine + ", \n" +
+	            "stato dell'ordine: " + statoOrdine + ", \n" +
+	            "numero coperti del tavolo: " + numeroCoperti + ", \n" +
+	            "ora acquisizione ordine: " + oraAcquisizione + ", \n" +
+	            "conto: " + importoTotale + ", \n" +
+	            "comanda: " + ordine;
 	}
+	
 
 }
