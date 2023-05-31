@@ -1,5 +1,10 @@
 package it.epicode.be.godfather.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class ToppingHam extends PizzaTopping {
 
 	public ToppingHam(Pizza pizza) {
