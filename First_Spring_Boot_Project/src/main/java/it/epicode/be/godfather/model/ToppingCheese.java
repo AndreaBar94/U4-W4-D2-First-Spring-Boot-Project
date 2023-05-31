@@ -1,12 +1,5 @@
-/**
- * 
- */
 package it.epicode.be.godfather.model;
 
-/**
- * @author gabri
- *
- */
 public class ToppingCheese extends PizzaTopping {
 
 	public ToppingCheese(Pizza pizza) {

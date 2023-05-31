@@ -20,7 +20,7 @@ public class GestioneMenu {
 	}
 
 	public void stampaMenu() {
-		System.out.println("******* Menu *******");
+		System.out.println("Menu");
 		System.out.println("PIZZA");
 		menu.getMenuPizza().forEach(p -> System.out.println(p.getMenuItemLine()));
 		System.out.println();
@@ -52,8 +52,6 @@ public class GestioneMenu {
 		System.out.println(toppingBig.getName());
 		System.out.println(toppingBig.getPrice());
 
-
-		
 	}
 
 }

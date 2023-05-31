@@ -16,9 +16,9 @@ public class GodFatherPizzaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(GodFatherPizzaApplication.class, args);
 
-//		GestioneMenu stampa = new GestioneMenu();
-//		stampa.stampaMenu();
-//		stampa.testTopping();
+		GestioneMenu stampa = new GestioneMenu();
+		stampa.stampaMenu();
+		stampa.testTopping();
 		
 	}
 
