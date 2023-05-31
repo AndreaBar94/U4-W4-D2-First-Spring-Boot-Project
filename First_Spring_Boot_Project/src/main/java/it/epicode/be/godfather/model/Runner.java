@@ -30,15 +30,15 @@ public class Runner implements CommandLineRunner{
 			
 	        // Inizializzo il menu
 	        PizzaMargherita pizza1 = ctx.getBean(PizzaMargherita.class);
-	        PizzaMargherita pizza2 = new PizzaMargherita();
-	        PizzaMargherita pizza3 = new PizzaMargherita();
-	        PizzaMargherita pizza4 = new PizzaMargherita();
+	        PizzaMargherita pizza2 = ctx.getBean(PizzaMargherita.class);
+	        PizzaMargherita pizza3 = ctx.getBean(PizzaMargherita.class);
+	        PizzaMargherita pizza4 = ctx.getBean(PizzaMargherita.class);
 
 	        // Creo l'ordine
 	        Map<MenuItem, String> ordine = new HashMap<>();
 	        ordine.put(pizza1, "Senza formaggio");
 	        ordine.put(pizza2, "Con funghi");
-	        ordine.put(pizza3, "");
+	        ordine.put(pizza3, "lactose intolerance");
 	        ordine.put(pizza4, "buona");
 
 	        int numeroTavolo = 1;

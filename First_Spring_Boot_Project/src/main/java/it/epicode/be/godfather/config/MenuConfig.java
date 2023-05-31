@@ -22,10 +22,6 @@ import it.epicode.be.godfather.model.ToppingHam;
 @Configuration
 public class MenuConfig {
 	
-	//vado ad utilizzare lo scope singleton sul menu e le varie pizze 
-	//perchè ho interesse che vengano istanziati una sola volta nel ciclo di vita dell'app 
-	//(se dovessi modificare una pizza nel menu basterebbe agire qui per avere le modifiche riflesse su ogni pizza dell'app)
-	
 	@Bean
 	@Scope("singleton")
 	public Menu menu() {
@@ -47,31 +43,28 @@ public class MenuConfig {
 	}
 
 	@Bean
-	@Scope("singleton")
+	@Scope("prototype")
 	public PizzaMargherita pizzaMargherita() {
 		return new PizzaMargherita();
 	}
 
 	@Bean
-	@Scope("singleton")
+	@Scope("prototype")
 	public PizzaHawaiian pizzaHawaiian() {
 		return new PizzaHawaiian();
 	}
 
 	@Bean
-	@Scope("singleton")
+	@Scope("prototype")
 	public PizzaSalami pizzaSalami() {
 		return new PizzaSalami();
 	}
 
 	@Bean
-	@Scope("singleton")
+	@Scope("prototype")
 	public Drink drinkLemonade() {
 		return new DrinkLemonade();
 	}
-	
-	//gli oggetti legati al merch invece avranno uno scope prototype perchè
-	//voglio creare una nuova istanza dell'oggetto ogni volta che viene richiesto
 	
 	@Bean
 	@Scope("prototype")
