@@ -33,7 +33,7 @@ public class Runner implements CommandLineRunner{
 	        PizzaMargherita pizza2 = ctx.getBean(PizzaMargherita.class);
 	        PizzaMargherita pizza3 = ctx.getBean(PizzaMargherita.class);
 	        PizzaMargherita pizza4 = ctx.getBean(PizzaMargherita.class);
-
+	        
 	        // Creo l'ordine
 	        Map<MenuItem, String> ordine = new HashMap<>();
 	        ordine.put(pizza1, "Senza formaggio");
