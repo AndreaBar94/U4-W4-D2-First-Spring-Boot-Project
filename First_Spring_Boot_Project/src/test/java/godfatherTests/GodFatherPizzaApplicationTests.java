@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import entities.Ordine;
+import it.epicode.be.godfather.model.Ordine;
 import lombok.extern.slf4j.Slf4j;
 
 @SpringBootTest
